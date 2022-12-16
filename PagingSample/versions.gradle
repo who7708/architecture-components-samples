@@ -221,8 +221,10 @@ deps.work = work
 ext.deps = deps
 
 def addRepos(RepositoryHandler handler) {
-    handler.google()
-    handler.jcenter()
-    handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    handler.maven { url 'https://maven.aliyun.com/repository/public' }
+    handler.maven { url 'https://maven.aliyun.com/repository/google' }
+    // handler.google()
+    // handler.jcenter()
+    // handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 ext.addRepos = this.&addRepos
